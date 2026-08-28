@@ -1,0 +1,200 @@
+/* =========================
+   Song Laboratory Website
+   ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navigation */
+
+header {
+  background: #ffffff;
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+  max-width: 1200px;
+  height: 82px;
+  margin: auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lab-name {
+  font-size: 23px;
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #34495e;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,0.88) 0%,
+      rgba(0,0,0,0.62) 40%,
+      rgba(0,0,0,0.20) 100%
+    ),
+    url("hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  padding: 80px 40px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  max-width: 680px;
+  font-size: 21px;
+  line-height: 1.7;
+}
+
+/* General Sections */
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 35px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+/* Publications */
+
+.publication {
+  margin-bottom: 28px;
+}
+
+.publication-title {
+  font-weight: 600;
+}
+
+.publication a {
+  color: #2869b1;
+  text-decoration: none;
+}
+
+.publication a:hover {
+  text-decoration: underline;
+}
+
+/* Research */
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.research-card {
+  border: 1px solid #e6e6e6;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.research-card h3 {
+  margin-bottom: 12px;
+}
+
+/* Footer */
+
+footer {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 35px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+  .navbar {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    min-height: 430px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
