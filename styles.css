@@ -118,16 +118,6 @@ svg {
   color: var(--blue);
 }
 
-.site-nav a.active::after {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -8px;
-  height: 2px;
-  content: "";
-  border-radius: 999px;
-  background: var(--blue);
-}
 
 .menu-toggle {
   display: none;
@@ -735,10 +725,6 @@ svg {
 
   .site-nav a {
     padding: 12px 0;
-  }
-
-  .site-nav a.active::after {
-    display: none;
   }
 
   .hero-grid,
