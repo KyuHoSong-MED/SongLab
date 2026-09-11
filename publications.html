@@ -1,63 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Publications | Song Laboratory</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research areas of KyuHo Song Lab." />
+  <title>Research | KyuHo Song Lab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="KyuHo Song Lab home">
+        <span class="brand-mark">KS</span>
+        <span class="brand-text">
+          <strong>KyuHo Song Lab</strong>
+          <span>Medical Imaging Physics</span>
+        </span>
+      </a>
 
-<header>
-  <nav class="navbar">
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-    <a class="lab-name" href="index.html">
-      ◉ Song Laboratory
-    </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="people.html">People</a>
+        <a href="index.html#opportunities">Opportunities</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <main>
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">Research</p>
+          <h2>Imaging technology from physics to translation</h2>
+          <p>
+            Our group combines imaging physics, RF engineering, electromagnetic simulation,
+            and computation to develop reproducible tools for biomedical research and clinical imaging.
+          </p>
+        </div>
 
-  </nav>
-</header>
+        <div class="research-grid">
+          <article class="research-card">
+            <span class="card-number">01</span>
+            <h3>RF Coil Design</h3>
+            <p>
+              We develop and evaluate RF coil technologies for MRI, including coil geometry optimization,
+              transmit and receive performance, sensitivity, and imaging applications.
+            </p>
+          </article>
 
+          <article class="research-card">
+            <span class="card-number">02</span>
+            <h3>Electromagnetic Simulation</h3>
+            <p>
+              We use computational electromagnetic simulation to investigate RF field distributions,
+              B1 efficiency, electric fields, specific absorption rate, and coil-sample interactions.
+            </p>
+          </article>
 
-<section class="section">
+          <article class="research-card">
+            <span class="card-number">03</span>
+            <h3>Magnetic Resonance Imaging</h3>
+            <p>
+              Our MRI research focuses on advanced imaging technology, quantitative imaging,
+              hardware development, and translation of imaging methods to biomedical applications.
+            </p>
+          </article>
 
-  <h1 class="section-title">Publications</h1>
+          <article class="research-card">
+            <span class="card-number">04</span>
+            <h3>Medical Imaging Physics</h3>
+            <p>
+              We investigate medical imaging technologies through quantitative image-quality evaluation,
+              physics-based optimization, and development of new imaging methodologies.
+            </p>
+          </article>
 
-  <h2>2026</h2>
+          <article class="research-card">
+            <span class="card-number">05</span>
+            <h3>Quantitative Imaging</h3>
+            <p>
+              We develop quantitative imaging techniques and computational approaches for extracting
+              reproducible imaging biomarkers.
+            </p>
+          </article>
 
-  <div class="publication">
-    <p>
-      Publications will be added here.
-    </p>
-  </div>
+          <article class="research-card">
+            <span class="card-number">06</span>
+            <h3>Computational Imaging</h3>
+            <p>
+              We develop image reconstruction, denoising, and quantitative image-analysis approaches
+              to improve measurement robustness and imaging performance.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <br>
+    <section class="feature-section">
+      <div class="container feature-grid">
+        <div class="feature-visual" aria-hidden="true">
+          <div class="scan scan-1"></div>
+          <div class="scan scan-2"></div>
+          <div class="scan scan-3"></div>
+          <div class="scan-center"></div>
+        </div>
 
-  <h2>2025</h2>
+        <div class="feature-copy">
+          <p class="eyebrow">Approach</p>
+          <h2>Build. Measure. Quantify. Translate.</h2>
+          <p>
+            We approach imaging problems across the full technical pipeline:
+            electromagnetic simulation and hardware development, acquisition optimization,
+            image reconstruction, and quantitative analysis.
+          </p>
+          <p>
+            This integrated workflow connects fundamental imaging physics with practical
+            applications in biomedical and clinical research.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <div class="publication">
-    <p>
-      Publications will be added here.
-    </p>
-  </div>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> KyuHo Song Lab</p>
+      <p>Medical Imaging Physics · Dallas, Texas</p>
+    </div>
+  </footer>
 
-</section>
-
-
-<footer>
-  <p>© 2026 Song Laboratory</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
