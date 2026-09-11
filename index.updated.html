@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KyuHo Song Lab - Quantitative medical imaging, MRI, RF engineering, computational imaging, and quantitative image analysis." />
+  <title>KyuHo Song Lab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="KyuHo Song Lab home">
+        <span class="brand-mark">KS</span>
+        <span class="brand-text">
+          <strong>KyuHo Song Lab</strong>
+          <span>Medical Imaging Physics</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="people.html">People</a>
+        <a href="index.html#opportunities">Opportunities</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow">KyuHo Song Lab</p>
+          <h1>Advancing Quantitative Medical Imaging</h1>
+          <p class="hero-lead">
+            We develop advanced imaging technologies at the intersection of
+            <strong>MR physics</strong>, <strong>RF engineering</strong>,
+            <strong>computational imaging</strong>, and
+            <strong>quantitative analysis</strong>.
+          </p>
+          <p class="hero-sub">
+            Our research focuses on quantitative and metabolic MRI,
+            application-specific imaging hardware, and emerging technologies
+            for biomedical and clinical imaging.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="research.html">Explore Our Research</a>
+            <a class="btn btn-secondary" href="publications.html">Publications</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="field field-a"></div>
+          <div class="field field-b"></div>
+          <div class="field field-c"></div>
+
+          <svg class="coil-svg" viewBox="0 0 600 600" role="img" aria-label="Abstract RF coil and magnetic field illustration">
+            <defs>
+              <linearGradient id="coilGradient" x1="0" x2="1">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96"/>
+                <stop offset="100%" stop-color="#dbe8f6" stop-opacity="0.60"/>
+              </linearGradient>
+            </defs>
+            <circle cx="300" cy="300" r="205" fill="none" stroke="url(#coilGradient)" stroke-width="4"/>
+            <circle cx="300" cy="300" r="155" fill="none" stroke="url(#coilGradient)" stroke-width="2.5" opacity=".78"/>
+            <circle cx="300" cy="300" r="108" fill="none" stroke="url(#coilGradient)" stroke-width="2" opacity=".55"/>
+            <ellipse cx="300" cy="300" rx="240" ry="80" fill="none" stroke="#ffffff" stroke-width="2" opacity=".35"/>
+            <ellipse cx="300" cy="300" rx="80" ry="240" fill="none" stroke="#ffffff" stroke-width="2" opacity=".35"/>
+            <path d="M110 355 C190 230, 410 230, 490 355" fill="none" stroke="#ffffff" stroke-width="2.2" opacity=".52"/>
+            <path d="M110 245 C190 370, 410 370, 490 245" fill="none" stroke="#ffffff" stroke-width="2.2" opacity=".52"/>
+            <circle cx="300" cy="300" r="22" fill="#ffffff" opacity=".88"/>
+          </svg>
+
+          <div class="hero-card">
+            <span class="hero-card-label">Research focus</span>
+            <strong>Physics-driven imaging innovation</strong>
+            <span>Hardware · MRI · Computation · Quantification</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO STRIP -->
+    <section class="intro-strip">
+      <div class="container intro-grid">
+        <div>
+          <span class="stat">MRI</span>
+          <p>Quantitative & metabolic imaging</p>
+        </div>
+        <div>
+          <span class="stat">RF</span>
+          <p>Application-specific hardware</p>
+        </div>
+        <div>
+          <span class="stat">AI</span>
+          <p>Reconstruction & image analysis</p>
+        </div>
+        <div>
+          <span class="stat">QIM</span>
+          <p>Quantitative imaging science</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">Research</p>
+          <h2>Imaging technology from physics to translation</h2>
+          <p>
+            Our group combines imaging physics, engineering, and computation
+            to develop reproducible tools for biomedical research and clinical imaging.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <span class="card-number">01</span>
+            <h3>Quantitative MRI</h3>
+            <p>
+              Quantitative imaging methods for tissue characterization,
+              reproducible measurements, and imaging biomarkers.
+            </p>
+          </article>
+
+          <article class="research-card">
+            <span class="card-number">02</span>
+            <h3>Multinuclear & Metabolic MRI</h3>
+            <p>
+              Development of multinuclear MRI and MRS approaches to investigate
+              metabolism, physiology, and disease-related changes.
+            </p>
+          </article>
+
+          <article class="research-card">
+            <span class="card-number">03</span>
+            <h3>RF Engineering & MR Hardware</h3>
+            <p>
+              RF coil design, electromagnetic simulation, prototyping, and
+              application-specific hardware for advanced MR experiments.
+            </p>
+          </article>
+
+          <article class="research-card">
+            <span class="card-number">04</span>
+            <h3>Computational Imaging</h3>
+            <p>
+              AI-enabled denoising, reconstruction, and quantitative image analysis
+              designed to improve measurement robustness and imaging performance.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE -->
+    <section class="feature-section">
+      <div class="container feature-grid">
+        <div class="feature-visual" aria-hidden="true">
+          <div class="scan scan-1"></div>
+          <div class="scan scan-2"></div>
+          <div class="scan scan-3"></div>
+          <div class="scan-center"></div>
+        </div>
+
+        <div class="feature-copy">
+          <p class="eyebrow">Approach</p>
+          <h2>Build. Measure. Quantify. Translate.</h2>
+          <p>
+            We approach imaging problems across the full technical pipeline:
+            electromagnetic simulation and hardware development, pulse-sequence
+            and acquisition optimization, image reconstruction, and quantitative analysis.
+          </p>
+          <p>
+            This integrated workflow allows us to connect fundamental imaging physics
+            with practical applications in biomedical and clinical research.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section section-muted" id="publications">
+      <div class="container">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="eyebrow dark">Publications</p>
+            <h2>Selected work</h2>
+          </div>
+          <a class="text-link" href="https://profiles.utsouthwestern.edu/profile/231959/kyuho-song.html" target="_blank" rel="noopener">
+            View faculty profile
+          </a>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="pub-year">Recent</div>
+            <div>
+              <h3>Selected publications and scholarly work</h3>
+              <p>
+                Add your most representative MRI, RF-coil, quantitative imaging,
+                CT, and ultrasound publications here.
+              </p>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="pub-year">RSNA</div>
+            <div>
+              <h3>Small-pixel effects in ultra-high-resolution photon-counting CT</h3>
+              <p>
+                Phantom evaluation of noise texture and high-contrast spatial resolution.
+              </p>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="pub-year">MRI</div>
+            <div>
+              <h3>Application-specific RF probes and quantitative MR methods</h3>
+              <p>
+                Hardware and acquisition development for advanced MRI and metabolic imaging.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEOPLE -->
+    <section class="section" id="people">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">People</p>
+          <h2>Our team</h2>
+        </div>
+
+        <div class="people-grid">
+          <article class="person-card person-card-lead">
+            <div class="person-avatar">KS</div>
+            <div>
+              <span class="person-role">Principal Investigator</span>
+              <h3>KyuHo Song, PhD</h3>
+              <p>
+                Imaging scientist and diagnostic clinician working across MRI,
+                RF engineering, computational imaging, and quantitative imaging.
+              </p>
+              <a class="text-link" href="https://profiles.utsouthwestern.edu/profile/231959/kyuho-song.html" target="_blank" rel="noopener">
+                UT Southwestern profile
+              </a>
+            </div>
+          </article>
+
+          <article class="person-card placeholder-card">
+            <div class="plus">+</div>
+            <h3>Join the lab</h3>
+            <p>
+              Students, trainees, collaborators, and research staff can be added here.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPPORTUNITIES -->
+    <section class="opportunities" id="opportunities">
+      <div class="container opportunities-inner">
+        <div>
+          <p class="eyebrow">Opportunities</p>
+          <h2>Interested in imaging physics research?</h2>
+        </div>
+        <div>
+          <p>
+            We welcome collaborations and inquiries from students, trainees,
+            physicians, engineers, physicists, and imaging scientists.
+          </p>
+          <a class="btn btn-light" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow dark">Contact</p>
+          <h2>KyuHo Song Lab</h2>
+          <p class="contact-copy">
+            UT Southwestern Medical Center<br />
+            Dallas, Texas
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Research inquiries</h3>
+          <p>
+            For collaborations, student opportunities, or research questions,
+            use the official faculty profile below.
+          </p>
+          <a class="btn btn-primary" href="https://profiles.utsouthwestern.edu/profile/231959/kyuho-song.html" target="_blank" rel="noopener">
+            Faculty Profile
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> KyuHo Song Lab</p>
+      <p>Medical Imaging Physics · Dallas, Texas</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
