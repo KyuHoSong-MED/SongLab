@@ -108,12 +108,25 @@ svg {
 }
 
 .site-nav a {
+  position: relative;
   color: #364152;
   transition: color 0.2s ease;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a.active {
   color: var(--blue);
+}
+
+.site-nav a.active::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 2px;
+  content: "";
+  border-radius: 999px;
+  background: var(--blue);
 }
 
 .menu-toggle {
@@ -137,7 +150,7 @@ svg {
   overflow: hidden;
   color: white;
   background:
-    radial-gradient(circle at 70% 20%, rgba(255,255,255,.08), transparent 30%),
+    radial-gradient(circle at 70% 20%, rgba(255, 255, 255, .08), transparent 30%),
     linear-gradient(105deg, #0a0d10 0%, #272c31 40%, #7b8289 74%, #c9ced4 100%);
 }
 
@@ -159,7 +172,7 @@ svg {
 
 .eyebrow {
   margin: 0 0 18px;
-  color: rgba(255,255,255,.70);
+  color: rgba(255, 255, 255, .70);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: .18em;
@@ -189,7 +202,7 @@ svg {
 .hero-lead {
   max-width: 720px;
   margin: 28px 0 0;
-  color: rgba(255,255,255,.93);
+  color: rgba(255, 255, 255, .93);
   font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   line-height: 1.75;
 }
@@ -202,7 +215,7 @@ svg {
 .hero-sub {
   max-width: 660px;
   margin: 18px 0 0;
-  color: rgba(255,255,255,.70);
+  color: rgba(255, 255, 255, .70);
   font-size: 1rem;
 }
 
@@ -240,12 +253,12 @@ svg {
 
 .btn-secondary {
   color: white;
-  border: 1px solid rgba(255,255,255,.38);
-  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255, 255, 255, .38);
+  background: rgba(255, 255, 255, .07);
 }
 
 .btn-secondary:hover {
-  background: rgba(255,255,255,.13);
+  background: rgba(255, 255, 255, .13);
 }
 
 .btn-light {
@@ -263,14 +276,14 @@ svg {
   inset: 50% auto auto 50%;
   width: min(540px, 105%);
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 26px 45px rgba(0,0,0,.25));
+  filter: drop-shadow(0 26px 45px rgba(0, 0, 0, .25));
 }
 
 .field {
   position: absolute;
   border-radius: 50%;
   filter: blur(2px);
-  border: 1px solid rgba(255,255,255,.18);
+  border: 1px solid rgba(255, 255, 255, .18);
 }
 
 .field-a {
@@ -300,7 +313,7 @@ svg {
   bottom: 28px;
   width: min(320px, 86%);
   padding: 18px 20px;
-  border: 1px solid rgba(255,255,255,.18);
+  border: 1px solid rgba(255, 255, 255, .18);
   border-radius: 18px;
   background: rgba(12, 27, 42, .52);
   backdrop-filter: blur(14px);
@@ -314,7 +327,7 @@ svg {
 
 .hero-card-label {
   margin-bottom: 4px;
-  color: rgba(255,255,255,.56);
+  color: rgba(255, 255, 255, .56);
   font-size: .72rem;
   text-transform: uppercase;
   letter-spacing: .12em;
@@ -327,7 +340,7 @@ svg {
 
 .hero-card span:last-child {
   margin-top: 5px;
-  color: rgba(255,255,255,.72);
+  color: rgba(255, 255, 255, .72);
   font-size: .8rem;
 }
 
@@ -472,7 +485,7 @@ svg {
 }
 
 .feature-copy > p:not(.eyebrow) {
-  color: rgba(255,255,255,.72);
+  color: rgba(255, 255, 255, .72);
   font-size: 1rem;
 }
 
@@ -481,10 +494,10 @@ svg {
   min-height: 430px;
   border-radius: 30px;
   background:
-    radial-gradient(circle at center, rgba(255,255,255,.12), transparent 24%),
-    linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+    radial-gradient(circle at center, rgba(255, 255, 255, .12), transparent 24%),
+    linear-gradient(135deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .02));
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,.10);
+  border: 1px solid rgba(255, 255, 255, .10);
 }
 
 .scan,
@@ -494,7 +507,7 @@ svg {
   top: 50%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid rgba(255,255,255,.22);
+  border: 1px solid rgba(255, 255, 255, .22);
 }
 
 .scan-1 { width: 340px; height: 340px; }
@@ -505,8 +518,8 @@ svg {
   width: 62px;
   height: 62px;
   border: 0;
-  background: rgba(255,255,255,.88);
-  box-shadow: 0 0 90px rgba(255,255,255,.42);
+  background: rgba(255, 255, 255, .88);
+  box-shadow: 0 0 90px rgba(255, 255, 255, .42);
 }
 
 /* Publications */
@@ -643,7 +656,7 @@ svg {
 
 .opportunities p {
   margin-top: 0;
-  color: rgba(255,255,255,.82);
+  color: rgba(255, 255, 255, .82);
 }
 
 .opportunities .btn {
@@ -722,6 +735,10 @@ svg {
 
   .site-nav a {
     padding: 12px 0;
+  }
+
+  .site-nav a.active::after {
+    display: none;
   }
 
   .hero-grid,
