@@ -867,3 +867,50 @@ svg {
   border: 0;
   cursor: pointer;
 }
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--navy);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  background: white;
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(51, 121, 183, 0.14);
+}
+
+.contact-form .btn {
+  width: fit-content;
+  margin-top: 6px;
+  border: 0;
+  cursor: pointer;
+}
