@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News | Song Laboratory</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="News and updates from KyuHo Song Lab." />
+  <title>News | KyuHo Song Lab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="KyuHo Song Lab home">
+        <span class="brand-mark">KS</span>
+        <span class="brand-text">
+          <strong>KyuHo Song Lab</strong>
+          <span>Medical Imaging Physics</span>
+        </span>
+      </a>
 
-<header>
-  <nav class="navbar">
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-    <a class="lab-name" href="index.html">
-      ◉ Song Laboratory
-    </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="people.html">People</a>
+        <a href="news.html" class="active">News</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <main>
+    <section class="section section-muted" id="news">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">News</p>
+          <h2>Latest updates</h2>
+          <p>
+            Lab news, research updates, presentations, publications, awards,
+            and conference activities from KyuHo Song Lab.
+          </p>
+        </div>
 
-  </nav>
-</header>
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="pub-year">Aug 2026</div>
+            <div>
+              <h3>Laboratory website launched</h3>
+              <p>
+                The KyuHo Song Lab website is now online.
+              </p>
+            </div>
+          </article>
 
+          <article class="publication-item">
+            <div class="pub-year">2026</div>
+            <div>
+              <h3>New research updates coming soon</h3>
+              <p>
+                Updates on imaging physics research, publications, presentations,
+                collaborations, and lab activities will be posted here.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section class="section">
+    <section class="opportunities">
+      <div class="container opportunities-inner">
+        <div>
+          <p class="eyebrow">Connect</p>
+          <h2>Interested in collaboration?</h2>
+        </div>
+        <div>
+          <p>
+            For research collaboration, student opportunities, or imaging physics inquiries,
+            please contact the lab.
+          </p>
+          <a class="btn btn-light" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <h1 class="section-title">News</h1>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> KyuHo Song Lab</p>
+      <p>Medical Imaging Physics · Dallas, Texas</p>
+    </div>
+  </footer>
 
-  <div class="publication">
-    <h3>Laboratory Website Launched</h3>
-    <p>August 2026</p>
-    <p>
-      The Song Laboratory website is now online.
-    </p>
-  </div>
-
-</section>
-
-
-<footer>
-  <p>© 2026 Song Laboratory</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
